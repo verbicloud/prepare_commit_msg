@@ -26,3 +26,6 @@ repos:
         stages: [prepare-commit-msg]
         always_run: true
 ```
+
+## Good to know
+There is a second [pre-commit hook](https://github.com/verbicloud/check_commit_msg) to validate the message according to these instructions
