@@ -1,0 +1,6 @@
+- id: prepare-commit-msg-hook
+  name: Prepare Commit Message Hook
+  description: Validates commit messages
+  entry: prepare-commit-msg-hook
+  language: python
+  stages: [prepare-commit-msg]
