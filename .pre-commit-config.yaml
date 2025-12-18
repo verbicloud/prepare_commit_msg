@@ -1,13 +1,4 @@
 repos:
-  - repo: local
-    hooks:
-    -   id: prepare-commit-msg
-        name: Add commit instructions
-        entry: python3 src/prepare_commit_msg/hook.py
-        language: python
-        stages: [prepare-commit-msg]
-        always_run: true
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
@@ -18,3 +9,8 @@ repos:
       - id: requirements-txt-fixer
       - id: pretty-format-json
         args: [--autofix, --indent=4, --no-ensure-ascii]
+
+  - repo: https://github.com/verbicloud/prepare_commit_msg
+    rev: v0.0.4
+    hooks:
+    - id: prepare-commit-msg-hook
