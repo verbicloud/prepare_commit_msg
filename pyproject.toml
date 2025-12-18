@@ -7,7 +7,7 @@ requires-python = ">=3.9"
 dependencies = []
 
 [project.scripts]
-commit-msg-hook = "prepare_commit_msg.hook:main"
+prepare-commit-msg-hook = "prepare_commit_msg.hook:main"
 
 
 [build-system]
